@@ -50,3 +50,13 @@ Business Requirements
 |GS1UiShowNavigation|Display GS1 Canada menu (navigation) bar|gs1-ui-show-nav.Component|
 |GS1UiShowTable|Display the retrieved data in a table|gs1-ui-show-table.Component|
 |GS1UiShowChart|Display the retrieved data in a chart|gs1-ui-show-chart.Component|
+
+4. Class Diagram
+
+![eps03](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/class-diagram.jpg)
+
+
+
+
+
+
