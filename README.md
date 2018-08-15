@@ -43,9 +43,9 @@ Business Requirements
 
 |Component Name|Description|File (ts,css,html)|
 | ------------ | --------- | ---------------- |
-|GS1UiShowHeader|Include logo, nativation information|gs1-ui-show-header.Component|
-|GS1UiShowFooter|Include logo, corporate information|gs1-ui-show-footer.Component|
-
-
-
+|GS1UiShowHeader|Display GS1 Canada logo, nativation information|gs1-ui-show-header.Component|
+|GS1UiShowFooter|Display GS1 Canada logo, corporate information|gs1-ui-show-footer.Component|
+|GS1UiShowNavigation|Display menu navigation bar|gs1-ui-show-nav.Component|
+|GS1UiShowTable|Display analysis items list table|gs1-ui-show-table.Component|
+|GS1UiShowChart|Display google analystics data in a chart|gs1-ui-show-chart.Component|
 
