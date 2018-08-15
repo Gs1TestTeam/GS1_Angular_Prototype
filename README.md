@@ -42,6 +42,7 @@ Business Requirements
 3. UI Component List
 
 |Component Name|Description|File (ts,css,html)|
+| ------------ | --------- | ---------------- |
 |GS1UiShowHeader|Include logo, nativation information|gs1-ui-show-header.Component|
 |GS1UiShowFooter|Include logo, corporate information|gs1-ui-show-footer.Component|
 
