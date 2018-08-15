@@ -37,7 +37,7 @@ Business Requirements
 
 2. UI Component Visualization Diagram
 
-![eps01](https://user-images.githubusercontent.com/29003115/37583573-52acf17c-2b28-11e8-8726-89996d6b49bf.jpg)
+![eps01](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/gs1-logo1.jpg)
 
 3. UI Component List
 
