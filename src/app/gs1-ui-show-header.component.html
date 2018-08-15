@@ -1,0 +1,170 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+$( document ).ready(function() {
+
+$("a[href$='pdf']").each(function(index) {
+pdfLabel = $(this).attr('href');
+pdfOnClick = "_gaq.push(['_trackEvent', 'PDF', 'Download', '" + pdfLabel + "']);";
+$(this).attr("onClick", pdfOnClick);
+});
+
+$("a[href$='xlsx']").each(function(index) {
+xlsxLabel = $(this).attr('href');
+xlsxOnClick = "_gaq.push(['_trackEvent', 'xlsx', 'Download', '" + xlsxLabel + "']);";
+$(this).attr("onClick", xlsxOnClick);
+});
+
+$("a[href$='xls']").each(function(index) {
+xlsLabel = $(this).attr('href');
+xlsOnClick = "_gaq.push(['_trackEvent', 'xls', 'Download', '" + xlsLabel + "']);";
+$(this).attr("onClick", xlsOnClick);
+});
+
+$("a[href$='zip']").each(function(index) {
+zipLabel = $(this).attr('href');
+zipOnClick = "_gaq.push(['_trackEvent', 'zip', 'Download', '" + zipLabel + "']);";
+$(this).attr("onClick", zipOnClick);
+});
+
+$("a[href$='doc']").each(function(index) {
+docLabel = $(this).attr('href');
+docOnClick = "_gaq.push(['_trackEvent', 'doc', 'Download', '" + docLabel + "']);";
+$(this).attr("onClick", docOnClick);
+});	
+
+$("a[href$='docx']").each(function(index) {
+docxLabel = $(this).attr('href');
+docxOnClick = "_gaq.push(['_trackEvent', 'docx', 'Download', '" + docxLabel + "']);";
+$(this).attr("onClick", docxOnClick);
+});	
+
+$("a[href$='pptx']").each(function(index) {
+pptxLabel = $(this).attr('href');
+pptxOnClick = "_gaq.push(['_trackEvent', 'pptx', 'Download', '" + pptxLabel + "']);";
+$(this).attr("onClick", pptxOnClick);
+});	
+
+$("a[href$='ppt']").each(function(index) {
+pptLabel = $(this).attr('href');
+pptOnClick = "_gaq.push(['_trackEvent', 'ppt', 'Download', '" + pptLabel + "']);";
+$(this).attr("onClick", pptOnClick);
+});	
+
+$("a[href$='mp4']").each(function(index) {
+mp4Label = $(this).attr('href');
+mp4OnClick = "_gaq.push(['_trackEvent', 'mp4', 'Download', '" + mp4Label + "']);";
+$(this).attr("onClick", mp4OnClick);
+});	
+});
+</script>
+<!--**************** GA ************** -->
+<script type="text/javascript">
+
+$( document ).ready(function() {
+
+
+$("a[href$='pdf']").each(function(index) {
+pdfLabel = $(this).attr('href');
+pdfOnClick = "ga('send', 'event', 'PDF', 'Download', '"+pdfLabel+"');";
+$(this).attr("onClick", pdfOnClick);
+});
+
+$("a[href$='xlsx']").each(function(index) {
+xlsxLabel = $(this).attr('href');
+xlsxOnClick = "ga('send', 'event', 'xlsx', 'Download', '"+xlsxLabel+"');";
+$(this).attr("onClick", xlsxOnClick);
+});
+
+$("a[href$='xls']").each(function(index) {
+xlsLabel = $(this).attr('href');
+xlsOnClick = "ga('send', 'event', 'xls', 'Download', '"+xlsLabel+"');";
+$(this).attr("onClick", xlsOnClick);
+});
+
+
+$("a[href$='zip']").each(function(index) {
+zipLabel = $(this).attr('zip');
+zipOnClick = "ga('send', 'event', 'zip', 'Download', '"+zipLabel+"');";
+$(this).attr("onClick", zipOnClick);
+});
+
+$("a[href$='doc']").each(function(index) {
+docLabel = $(this).attr('doc');
+docOnClick = "ga('send', 'event', 'doc', 'Download', '"+docLabel+"');";
+$(this).attr("onClick", docOnClick);
+});
+
+$("a[href$='docx']").each(function(index) {
+docxLabel = $(this).attr('docx');
+docxOnClick = "ga('send', 'event', 'docx', 'Download', '"+docxLabel+"');";
+$(this).attr("onClick", docxOnClick);
+});
+
+$("a[href$='pptx']").each(function(index) {
+pptxLabel = $(this).attr('pptx');
+pptxOnClick = "ga('send', 'event', 'pptx', 'Download', '"+pptxLabel+"');";
+$(this).attr("onClick", pptxOnClick);
+});
+
+$("a[href$='ppt']").each(function(index) {
+pptLabel = $(this).attr('ppt');
+pptOnClick = "ga('send', 'event', 'ppt', 'Download', '"+pptLabel+"');";
+$(this).attr("onClick", pptOnClick);
+});
+
+$("a[href$='twbx']").each(function(index) {
+twbxLabel = $(this).attr('twbx');
+twbxOnClick = "ga('send', 'event', 'twbx', 'Download', '"+twbxLabel+"');";
+$(this).attr("onClick", twbxOnClick);
+});
+
+$("a[href$='mp4']").each(function(index) {
+mp4Label = $(this).attr('mp4');
+mp4OnClick = "ga('send', 'event', 'mp4', 'Download', '"+mp4Label+"');";
+$(this).attr("onClick", mp4OnClick);
+});
+});
+</script>
+
+<!--**************** ENDS ************** -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The meta tag below can not be altered or removed -->
+  <meta name="gs1-template" content="gs1-v1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>GS1 Canada</title><!--2-->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6247692/752844/css/fonts.css">
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+  <link href="https://www.gs1ca.org/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://www.gs1ca.org/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="https://www.gs1ca.org/css/bootstrap-accessibility.min.css" rel="stylesheet">
+<style>
+.toolkit .logo1 p {
+  left: 130px;
+}
+</style>
+<!--added by fm Marketing March 3 2011-->
+<meta name="keywords" content="bar code, barcode, barcodes, bar codes, U.P.C., UPC, upc code, upc codes, GTIN, data synch, data synchronization, data exchange, information exchange, ECCnet, ECCNET, Company Prefix, Company Prefix Licence,  Company Prefix License, supply chain, marketing images, planogram images, healthcare supply chain, health care supply chain, product recall, planogram, planogramming, Item Centre, Item Center">
+<!--added by fm Marketing March 3 2011-->
+<div class="toolkit" id="2">
+    <div class="header-top">
+    <!-- Header:Jay Start -->  
+ 
+        <app-gs1-ui-show-logo
+            [logoW]    = "logoW"
+            [logoH]    = "logoH"        
+            [logoS1]   = "logoS1"
+            [logoS2]   = "logoS2"
+        >
+        </app-gs1-ui-show-logo>
+        <app-gs1-ui-show-navigation
+            [displayN]  = "displayN"
+            [gUrl]      = "gUrl"
+        >
+        </app-gs1-ui-show-navigation>
+    <!-- Header:Jay End -->
+    </div>
+</div>

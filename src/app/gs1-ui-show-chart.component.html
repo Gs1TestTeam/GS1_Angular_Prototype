@@ -1,0 +1,15 @@
+<div class="dbms" style="width: 40%;">
+        <b>{{chartTitle}}</b>
+        <canvas
+            baseChart
+            [chartType]="chartStyle"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [legend]="true"
+            (chartClick)="onChartClick($event)">
+        </canvas>
+    </div>
+
+
+
