@@ -57,7 +57,7 @@ Business Requirements
 - src\app\gs1-components-classes\: create interfaces and classes in this app​
 - src\app\: create components (.ts, .html, .css, .spec) that are used in this app​
 
-```javascript
+```js
 ng g c GS1UiShowLogo --flat
 ng g c GS1UiShowHeader --flat
 ng g c GS1UiShowFooter --flat
@@ -71,7 +71,7 @@ ng g c GS1UiShowPageNotFound –flat
 
 - src\app\: create servies (.ts) that are used in this app
 
-```javascript
+```js
 ng g s GS1GetMenuList --module app --spec false
 ng g s GS1GetGoogleAnalitics --module app --spec false
 ng g s GS1GetObjects --module app --spec false
