@@ -34,10 +34,11 @@ Business Requirements
 
 1. System Diagram
 
+![eps01](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/system-diagram.jpg)
 
 2. UI Component Visualization Diagram
 
-![eps01](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/visual-diagrams.jpg)
+![eps02](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/visual-diagrams.jpg)
 
 3. UI Component List
 
