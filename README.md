@@ -30,15 +30,15 @@ Business Requirements
 - Test Unit modules using Jasmine/Angular testing utilities
 - Built/Deployed application on Cloud platform (Heroku)
 
-**4. System Diagram: **
+**4. System Diagram:**
 
 ![eps01](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/system-diagram.jpg)
 
-**5. UI Component Visualization Diagram: **
+**5. UI Component Visualization Diagram:**
 
 ![eps02](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/visual-diagrams.jpg)
 
-**5. UI Component List: **
+**5. UI Component List:**
 
 |Component Name|Description|File (ts,css,html)|
 | ------------ | --------- | ---------------- |
@@ -49,7 +49,7 @@ Business Requirements
 |GS1UiShowTable|Display the retrieved data in a table|gs1-ui-show-table.Component|
 |GS1UiShowChart|Display the retrieved data in a chart|gs1-ui-show-chart.Component|
 
-**6. Implement components and services: **
+**6. Implement components and services:**
 
 - ng new GS1-Angular-Trototype --routing
 - src\app\gs1-components-classes\: create interfaces and classes in this app​
@@ -86,11 +86,11 @@ ng g s GS1GetData --module app --spec false
 - src\app.module
 - src\app.component
 
-**7. Class Diagram: **
+**7. Class Diagram:**
 
 ![eps03](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/class-diagram.jpg)
 
-**8. Composite pages: **
+**8. Composite pages:**
 
 - List page: 
 
