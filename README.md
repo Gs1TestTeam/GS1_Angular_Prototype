@@ -50,3 +50,51 @@ Business Requirements
 |GS1UiShowNavigation|Display GS1 Canada menu (navigation) bar|gs1-ui-show-nav.Component|
 |GS1UiShowTable|Display the retrieved data in a table|gs1-ui-show-table.Component|
 |GS1UiShowChart|Display the retrieved data in a chart|gs1-ui-show-chart.Component|
+
+4. Implement components and services
+
+- ng new GS1-Angular-Trototype --routing
+- src\app\gs1-components-classes\: create interfaces and classes in this app​
+- src\app\: create components (.ts, .html, .css, .spec) that are used in this app​
+
+ng g c GS1UiShowLogo --flat
+ng g c GS1UiShowHeader --flat
+ng g c GS1UiShowFooter --flat
+ng g c GS1UiShowNavigation --flat
+ng g c GS1UiShowContents --flat
+ng g c GS1UiShowChart --flat
+ng g c GS1UiShowDetail --flat
+ng g c GS1UiShowTable --flat
+ng g c GS1UiShowPageNotFound –flat
+
+- src\app\: create servies (.ts) that are used in this app
+
+ng g s GS1GetMenuList --module app --spec false
+ng g s GS1GetGoogleAnalitics --module app --spec false
+ng g s GS1GetObjects --module app --spec false
+ng g s GS1GetData --module app --spec false
+
+- src\app\each .ts: implement classes for the components, which is used in .html tag
+- src\app\each .html: write UI tags for the components
+- src\app\each .css: write styles for the components
+- src\app\each .spec: write unit test for the components
+- src\index.html: the entry point of this App
+- src\styles.css: global css file
+- src\app.component (ts, html, css, spec): default componet called by index.html
+- src\app.module
+- src\app.component
+
+5. Class Diagram
+
+![eps03](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/class-diagram.jpg)
+
+6. Composite pages
+
+- List page: 
+
+![eps04](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/list-page.jpg)
+
+- Chart page: 
+
+![eps05](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/chart-page.jpg)
+
