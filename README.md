@@ -46,6 +46,6 @@ Business Requirements
 |GS1UiShowHeader|Display GS1 Canada logo, nativation information|gs1-ui-show-header.Component|
 |GS1UiShowFooter|Display GS1 Canada logo, corporate information|gs1-ui-show-footer.Component|
 |GS1UiShowLogo|Display GS1 Canada logo|gs1-ui-show-table.Component|
-|GS1UiShowNavigation|Display navigation (menu) bar|gs1-ui-show-nav.Component|
+|GS1UiShowNavigation|Display GS1 Canada menu (navigation) bar|gs1-ui-show-nav.Component|
 |GS1UiShowTable|Display the retrieved data in a table|gs1-ui-show-table.Component|
 |GS1UiShowChart|Display the retrieved data in a chart|gs1-ui-show-chart.Component|
