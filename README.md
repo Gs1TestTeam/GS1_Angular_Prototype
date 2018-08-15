@@ -37,7 +37,7 @@ Business Requirements
 
 2. UI Component Visualization Diagram
 
-![eps01](https://gs1ca-my.sharepoint.com/:i:/g/personal/jongkukl_gs1ca_org/EcLSnzHUvAZNl8LyVqFonxMBZcAqlecOWHePiuFNbPNLtw?e=UuCBhs)
+![eps01](https://drive.google.com/open?id=1eKKO06NTmPdL7qO6yLWmZJUNRdgehKZ2)
 
 3. UI Component List
 
