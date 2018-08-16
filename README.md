@@ -51,9 +51,15 @@ Business Requirements
 
 **6. Implement components and services:**
 
+1. Install node.js (https://nodejs.org/en/download/ )
+2. Install Visual Studio Code (https://code.visualstudio.com/ )
+3. Install Angular CLI (Command Line Interface) (https://angular.io/tutorial/toh-pt0/ )
+
+Get started: 
+
 - ng new GS1-Angular-Trototype --routing
-- src\app\gs1-components-classes\: create interfaces and classes in this app​
-- src\app\: create components (.ts, .html, .css, .spec) that are used in this app​
+- src\app\gs1-components-classes\: create interfaces and classes in this app
+- src\app\: create components (.ts, .html, .css, .spec) that are used in this app
 
 ```js
 ng g c GS1UiShowLogo --flat
