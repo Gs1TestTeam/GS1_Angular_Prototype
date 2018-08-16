@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import {GS1UIShowTableIF} from './gs1-ui-components-classes/GS1UIShowTableIF';
 @Component({
   selector: 'app-gs1-ui-show-table',
   templateUrl: './gs1-ui-show-table.component.html',
   styleUrls: ['./gs1-ui-show-table.component.css']
 })
-export class GS1UiShowTableComponent implements OnInit, GS1UIComponentsIF {
+export class GS1UiShowTableComponent implements OnInit, GS1UIShowTableIF {
 
   constructor() { }
 
