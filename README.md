@@ -111,5 +111,6 @@ ng g s GS1GetData --module app --spec false
 **9. See more:**
 
 [Wiki to learn how to use GS1's UI Components](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/wiki)
-[Issues for GS1's UI Components](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/wiki)
+
+[Issues for GS1's UI Components](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/issues)
 
