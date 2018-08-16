@@ -3,7 +3,7 @@ August 2018 ~
 
 Developed by Jay, Avinash, Olga, Written by Jay
 
-Demo Url: 
+Url: 
 
 **1. Overview:** This taks is to define the prototypes of reusable UI components with up-to-date version Angular and Google Analytics.
 
@@ -51,7 +51,21 @@ Business Requirements
 
 [Go Wiki to learn how to use GS1's UI Components](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/wiki)
 
-**6. Implement components and services:**
+**6. Class Diagram:**
+
+![eps03](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/class-diagram.jpg)
+
+**7. Composite pages:**
+
+- List page: 
+
+![eps04](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/list-page.jpg)
+
+- Chart page: 
+
+![eps05](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/chart-page.jpg)
+
+**8. Implement components and services:**
 
 1. Install node.js (https://nodejs.org/en/download/ )
 2. Install Visual Studio Code (https://code.visualstudio.com/ )
@@ -94,21 +108,7 @@ ng g s GS1GetData --module app --spec false
 - src\app.module
 - src\app.component
 
-**7. Class Diagram:**
-
-![eps03](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/class-diagram.jpg)
-
-**8. Composite pages:**
-
-- List page: 
-
-![eps04](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/list-page.jpg)
-
-- Chart page: 
-
-![eps05](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/chart-page.jpg)
-
-**9. See more:**
+**See more:**
 
 [Wiki to learn how to use GS1's UI Components](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/wiki)
 
