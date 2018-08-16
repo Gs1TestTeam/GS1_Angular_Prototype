@@ -21,6 +21,7 @@ import { ChartsModule } from 'ng2-charts'; ​
 
 import { GS1GetGoogleAnaliticsService } from './gs1-get-google-analitics.service';
 import { Gs1UiShowBackButtonComponent } from './gs1-ui-show-back-button.component';
+import { Gs1UiShowTitleComponent } from './gs1-ui-show-title.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { Gs1UiShowBackButtonComponent } from './gs1-ui-show-back-button.componen
     Gs1GoogleAnalList2Component,
     Gs1GoogleAnalList3Component,
     Gs1UiShowBackButtonComponent,
+    Gs1UiShowTitleComponent
     
   ],
   imports: [

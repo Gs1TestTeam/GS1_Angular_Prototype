@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gs1-google-anal-chart.component.css']
 })
 export class Gs1GoogleAnalChartComponent implements OnInit {
-
+  pageTitle: string = "GS1 Google Analytics Chart";//added by Olga
   constructor() { }
 
   ngOnInit() {

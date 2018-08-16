@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Gs1GoogleAnalList3Component implements OnInit {
 
+  pageTitle: string = "GS1 Google Analytics List3";//added by Olga
+
   constructor() { }
 
   ngOnInit() {
