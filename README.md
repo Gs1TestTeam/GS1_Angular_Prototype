@@ -1,7 +1,7 @@
 # GS1 Canada Angular Prototype Development Task
 August 2018 ~ 
 
-Written by Jay, Avinash, Olga
+Developed by Jay, Avinash, Olga, Written by Jay
 
 Demo Url: 
 
