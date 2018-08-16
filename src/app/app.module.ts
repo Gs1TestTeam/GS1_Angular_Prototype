@@ -20,6 +20,8 @@ import { Gs1GoogleAnalList3Component } from './gs1-google-anal-list3.component';
 import { ChartsModule } from 'ng2-charts'; ​
 
 import { GS1GetGoogleAnaliticsService } from './gs1-get-google-analitics.service';
+import { Gs1UiShowBackButtonComponent } from './gs1-ui-show-back-button.component';
+
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { GS1GetGoogleAnaliticsService } from './gs1-get-google-analitics.service
     Gs1GoogleAnalDetailComponent,
     Gs1GoogleAnalList2Component,
     Gs1GoogleAnalList3Component,
+    Gs1UiShowBackButtonComponent,
+    
   ],
   imports: [
     BrowserModule,
