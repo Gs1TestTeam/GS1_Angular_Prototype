@@ -8,9 +8,5 @@
  *
 ********************************************************************************/
 export interface GS1UiShowTitleIF extends GS1UIComponentsIF {
-  Col1Title: string;
-  Col2: string;
-  fieldData: Array<string>;
-  Col3: string;
-  labelData: Array<string>;
+
 }
