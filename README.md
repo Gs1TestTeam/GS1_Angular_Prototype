@@ -49,6 +49,8 @@ Business Requirements
 |GS1UiShowTable|Display the retrieved data in a table|gs1-ui-show-table.Component|
 |GS1UiShowChart|Display the retrieved data in a chart|gs1-ui-show-chart.Component|
 
+[a link](https://github.com/user/repo/blob/branch/other_file.md)
+
 **6. Implement components and services:**
 
 1. Install node.js (https://nodejs.org/en/download/ )
