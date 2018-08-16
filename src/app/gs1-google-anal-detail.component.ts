@@ -8,7 +8,7 @@ import { GS1GetGoogleAnaliticsService } from './gs1-get-google-analitics.service
   styleUrls: ['./gs1-google-anal-detail.component.css']
 })
 export class Gs1GoogleAnalDetailComponent implements OnInit {
-
+  pageTitle: string = "GS1 Google Analytics Detail";//added by Olga
   private id: string;
   private paramSubScription: any;
 

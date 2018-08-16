@@ -3,8 +3,9 @@
             <nav class="navbar yamm navbar-default" role="navigation">
                 <div id="navbar-collapse-example" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav" style="overflow: hidden;">
-                        <li class="dropdown yamm-fw" routerLinkActive="active" *ngFor="let name of displayNames; index as i">
-                            <a routerLink="{{goUrls[i]}}">{{name}}</a>
+                        <!--changed by Olga on 2018-8-15 to use navList for links display-->
+                        <li class="dropdown yamm-fw" routerLinkActive="active" *ngFor="let menuItem of navList;">
+                            <a routerLink="{{menuItem.link}}">{{menuItem.name}}</a>
                         </li>
                     </ul>
                 </div>
