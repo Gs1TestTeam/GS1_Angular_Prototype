@@ -5,9 +5,9 @@ Written by Jay, Avinash, Olga
 
 Demo Url: 
 
-• **Overview:** This taks is to define the prototypes of reusable UI components with up-to-date version Angular and Google Analytics.
+**1. Overview:** This taks is to define the prototypes of reusable UI components with up-to-date version Angular and Google Analytics.
 
-• **Requirements:**
+**2. Requirements:**
 
 Technical Requirements 
 
@@ -23,24 +23,22 @@ Business Requirements
 - Embed Google Analytics 
 - Be like ProtoType 
 
-• **Key responsibilities:**
+**3. Key responsibilities:**
 - Draw Visualization Diagrams to create web pages
 - Design reusable UI components with Angular such as ShowLogo, ShowNavigation, ShowHeader, ShowFooter, ShowChart, ShowTable and so on
 - Create service module using Google Analytics API to diplay data as chart format
 - Test Unit modules using Jasmine/Angular testing utilities
 - Built/Deployed application on Cloud platform (Heroku)
 
-• **Read it!:**
-
-1. System Diagram
+**4. System Diagram:**
 
 ![eps01](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/system-diagram.jpg)
 
-2. UI Component Visualization Diagram
+**5. UI Component Visualization Diagram:**
 
 ![eps02](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/visual-diagrams.jpg)
 
-3. UI Component List
+**5. UI Component List:**
 
 |Component Name|Description|File (ts,css,html)|
 | ------------ | --------- | ---------------- |
@@ -51,12 +49,13 @@ Business Requirements
 |GS1UiShowTable|Display the retrieved data in a table|gs1-ui-show-table.Component|
 |GS1UiShowChart|Display the retrieved data in a chart|gs1-ui-show-chart.Component|
 
-4. Implement components and services
+**6. Implement components and services:**
 
 - ng new GS1-Angular-Trototype --routing
 - src\app\gs1-components-classes\: create interfaces and classes in this app​
 - src\app\: create components (.ts, .html, .css, .spec) that are used in this app​
 
+```js
 ng g c GS1UiShowLogo --flat
 ng g c GS1UiShowHeader --flat
 ng g c GS1UiShowFooter --flat
@@ -66,13 +65,16 @@ ng g c GS1UiShowChart --flat
 ng g c GS1UiShowDetail --flat
 ng g c GS1UiShowTable --flat
 ng g c GS1UiShowPageNotFound –flat
+```
 
 - src\app\: create servies (.ts) that are used in this app
 
+```js
 ng g s GS1GetMenuList --module app --spec false
 ng g s GS1GetGoogleAnalitics --module app --spec false
 ng g s GS1GetObjects --module app --spec false
 ng g s GS1GetData --module app --spec false
+```
 
 - src\app\each .ts: implement classes for the components, which is used in .html tag
 - src\app\each .html: write UI tags for the components
@@ -84,11 +86,11 @@ ng g s GS1GetData --module app --spec false
 - src\app.module
 - src\app.component
 
-5. Class Diagram
+**7. Class Diagram:**
 
 ![eps03](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/class-diagram.jpg)
 
-6. Composite pages
+**8. Composite pages:**
 
 - List page: 
 
