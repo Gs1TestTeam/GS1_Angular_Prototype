@@ -10,7 +10,7 @@
 
 import { Injectable } from '@angular/core';
 import { MenuList } from './Menu-List';
-
+import { MenuItem } from './MenuItem';
 
 @Injectable({
   providedIn: 'root'
@@ -18,5 +18,5 @@ import { MenuList } from './Menu-List';
 export class GS1GetMenuListService {
 
  // constructor() { }
-  getMenuList() { return MenuList; }
+  getMenuList(): MenuItem[] { return MenuList; }
 }

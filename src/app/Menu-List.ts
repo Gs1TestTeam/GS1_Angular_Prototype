@@ -11,9 +11,8 @@
 import { MenuItem } from './MenuItem';
 
 export const MenuList: MenuItem[] = [
-    { name: 'Analysis View1', link: 'list1'},
-    { name: 'Analysis View2', link: 'list2'},
-    { name: 'Analysis View3', link: 'list3'},
-    { name: 'cat scientist', link: 'link123'},
-    { name: 'About', link: 'aboutlink'}
+    { name: 'Analysis View #1', link: 'list1' },
+    { name: 'Analysis View #2', link: 'list2' },
+    { name: 'Analysis View #3', link: 'list3' },
+  
 ];
