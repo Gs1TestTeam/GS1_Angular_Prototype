@@ -3,7 +3,7 @@ August 2018 ~
 
 Developed by Jay, Avinash, Olga, Written by Jay
 
-Url: 
+Url: http://gs1test123team.000webhostapp.com/list1
 
 **1. Overview:** This taks is to define the prototypes of reusable UI components with up-to-date version Angular and Google Analytics.
 
@@ -19,16 +19,16 @@ Technical Requirements
 
 Business Requirements 
 
-- Create 3 pages Angular pages (List, Chart, Dettail)
-- Embed Google Analytics 
+- Create 3 pages Angular pages (List, Chart, Detail)
+- Embed Google Analytics chart
 - Be like ProtoType 
 
 **3. Key responsibilities:**
-- Draw Visualization Diagrams to create web pages
+- Draw Visualization Diagrams for creating web pages
 - Design reusable UI components with Angular such as ShowLogo, ShowNavigation, ShowHeader, ShowFooter, ShowChart, ShowTable and so on
-- Create service module using Google Analytics API to diplay data as chart format
-- Test Unit modules using Jasmine/Angular testing utilities
-- Built/Deployed application on Cloud platform (Heroku)
+- Create service modules using Google Analytics API to diplay data in a chart format
+- Test unit modules using Jasmine/Angular testing utilities
+- Built/Deployed application on a free web hosting provider
 
 **4. System Diagram:**
 
@@ -113,4 +113,6 @@ ng g s GS1GetData --module app --spec false
 [Wiki to learn how to use GS1's UI Components](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/wiki)
 
 [Issues for GS1's UI Components](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/issues)
+
+Demo url: http://gs1test123team.000webhostapp.com/
 
