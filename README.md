@@ -67,7 +67,7 @@ Business Requirements
 
 - Detail page: 
 
-![eps05](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/detail-page.jpg)
+![eps05](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/detail-page1.jpg)
 
 **8. Implement components and services:**
 
