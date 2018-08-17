@@ -3,7 +3,7 @@ August 2018 ~
 
 Developed by Jay, Avinash, Olga, Written by Jay
 
-Url: http://gs1test123team.000webhostapp.com/list1
+Url: http://gs1test123team.000webhostapp.com/
 
 **1. Overview:** This taks is to define the prototypes of reusable UI components with up-to-date version Angular and Google Analytics.
 
