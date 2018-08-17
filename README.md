@@ -65,6 +65,10 @@ Business Requirements
 
 ![eps05](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/chart-page.jpg)
 
+- Detail page: 
+
+![eps05](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/detail-page.jpg)
+
 **8. Implement components and services:**
 
 1. Install node.js (https://nodejs.org/en/download/ )
