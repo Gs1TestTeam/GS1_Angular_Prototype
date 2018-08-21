@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "angular-gtag": "^1.0.3",
     "angulartics-google-analytics": "^0.5.0",
     "chart.js": "^2.7.2",
     "core-js": "^2.5.4",
