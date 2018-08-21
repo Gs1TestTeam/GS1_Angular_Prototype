@@ -7,6 +7,21 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-123890110-1');
+
+	// Jay's test
+  function clickPieChart(tp)
+  {
+    alert("Jay's Test GA type: " + tp);
+    if(tp === "MySql")
+      gtag('event', 'MySql');
+    else if (tp === "DB2")
+      gtag('event', 'DB2');
+    else
+      gtag('event', 'MongoDB');
+  }
+  clickPieChart("MongoDB");
+
+
 </script>
 
 
