@@ -38,14 +38,14 @@ export class GS1UiShowChartComponent implements OnInit, OnDestroy, GS1UIShowChar
 
   ngOnDestroy() {
     this.paramSubScription.unsubscribe();
-  }  
+  }
 
   // call Chart
   onChartClick(event) {
     this.router.navigate(['detail', this.id]);
-  } 
+  }
 
   @Input() chartTitle: string;
   @Input() chartStyle: string;
-  @Input() chartSize: Number;  
+  @Input() chartSize: Number;
 }
