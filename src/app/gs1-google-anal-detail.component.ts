@@ -9,13 +9,13 @@ import { GS1GetGoogleAnaliticsService } from './gs1-get-google-analitics.service
 })
 export class Gs1GoogleAnalDetailComponent implements OnInit {
   pageTitle: string = "GS1 Google Analytics Detail";//added by Olga
-  private id: string;
-  private paramSubScription: any;
+   id: string;
+   paramSubScription: any;
 
-  private googleData: any;
-  private chartData: Array<any>;
-  private chartLabels: Array<string>; 
-  private chartTitle: string;
+   googleData: any;
+   chartData: Array<any>;
+   chartLabels: Array<string>; 
+   chartTitle: string;
 
   constructor(private actRouter: ActivatedRoute, private google: GS1GetGoogleAnaliticsService) { }
 
@@ -28,10 +28,10 @@ export class Gs1GoogleAnalDetailComponent implements OnInit {
     this.googleData = this.google.getGoogleData();
     this.chartData  = this.googleData[1];
     this.chartLabels= this.googleData[2];
-    this.chartTitle = this.googleData[4];   
+    this.chartTitle = this.googleData[4];
   }
 
   ngOnDestroy() {
     this.paramSubScription.unsubscribe();
-  }    
+  }
 }

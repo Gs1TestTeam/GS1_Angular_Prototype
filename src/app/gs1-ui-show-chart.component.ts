@@ -16,10 +16,10 @@ export class GS1UiShowChartComponent implements OnInit, OnDestroy, GS1UIShowChar
   private paramSubScription: any;
 
   private googleData: any;
-  private chartOptions: any;
-  private chartData: Array<any>;
-  private chartLabels: Array<string>; 
-  private googleUrl: string;
+  chartOptions: any;
+  chartData: Array<any>;
+  chartLabels: Array<string>; 
+ googleUrl: string;
 
   constructor(private actRouter: ActivatedRoute,
     private router: Router,
