@@ -2,6 +2,7 @@ import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GS1GetGoogleAnaliticsService } from './gs1-get-google-analitics.service';
 import { GS1UIShowChartIF } from './gs1-ui-components-classes/GS1UIShowChartIF';
+import { Gtag } from 'angular-gtag';
 
 @Component({
   selector: 'app-gs1-ui-show-chart',
@@ -20,7 +21,10 @@ export class GS1UiShowChartComponent implements OnInit, OnDestroy, GS1UIShowChar
   private chartLabels: Array<string>; 
   private googleUrl: string;
 
-  constructor(private actRouter: ActivatedRoute, private router: Router, private google: GS1GetGoogleAnaliticsService) { }
+  constructor(private actRouter: ActivatedRoute,
+    private router: Router,
+    private google: GS1GetGoogleAnaliticsService,
+    private gtag: Gtag) { }
 
   ngOnInit() {
     this.paramSubScription = this.actRouter.params.subscribe(params => {
@@ -38,14 +42,20 @@ export class GS1UiShowChartComponent implements OnInit, OnDestroy, GS1UIShowChar
 
   ngOnDestroy() {
     this.paramSubScription.unsubscribe();
-  }  
+  }
 
   // call Chart
   onChartClick(event) {
+    this.gtag.event('MySQL', {
+      method: 'Test',
+      event_category: 'engagemnt',
+      event_label: 'New user logged in via OAuth'
+    });
+    console.log("test------------------");
     this.router.navigate(['detail', this.id]);
-  } 
+  }
 
   @Input() chartTitle: string;
   @Input() chartStyle: string;
-  @Input() chartSize: Number;  
+  @Input() chartSize: Number;
 }

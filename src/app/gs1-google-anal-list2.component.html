@@ -1,8 +1,48 @@
 <br/><br/>
 <div class="container">
     <b><!--GS1 Google Analytics List2 show title component added by olga-->
-        <app-gs1-ui-show-title [pageTitle]="pageTitle">
+        <app-gs1-ui-show-title
+          [pageTitle]="'Olga\'s Work'"
+        >
         </app-gs1-ui-show-title>
+
+        <div width="700" align="center">
+            <app-gs1-ui-show-chart
+                [chartTitle]    = "'Jay\'s Work'"
+                [chartStyle]    = "'pie'"
+                [chartSize]     = "40"
+            >
+            </app-gs1-ui-show-chart>
+
+            <app-gs1-ui-show-table
+              [Col1Title]="'Avinash\'s Work'"
+              [Col2]="'Rank'"
+              [Col3]="'Point'"
+              [labelData] ="['field1', 'field2', 'field3', 'field4', 'field5']"
+              [fieldData]="[600, 345, 222, 657, 32]"
+            ></app-gs1-ui-show-table>
+        </div>
     </b><br/><br/>
 </div>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<!--The content below is only a placeholder and can be replaced.
+<app-gs1-ui-show-header
+  [logoW]    = "60"
+  [logoH]    = "60"
+  [logoS1]   = "'Welcome to GS1 Canada'"
+  [logoS2]   = "'The Global Language of Business'"
+  [displayN] = "['Analysis View1', 'Analysis View2', 'Analysis View3']"
+  [gUrl]     = "['list1', 'list2', 'list3']"
+>
+</app-gs1-ui-show-header>
+<app-gs1-ui-show-contents></app-gs1-ui-show-contents>
+<app-gs1-ui-show-footer
+  [address]   = "'GS1 Canada® is a registered trademark of GS1 Canada. Copyright © GS1 Canada 2018.'"
+  [email]     = "'info@gs1ca.org'"
+  [phone]     = "'1.800.567.7084'"
+  [fax]       = "'1.800.567.7085'"
+>
+</app-gs1-ui-show-footer>
+
+-->

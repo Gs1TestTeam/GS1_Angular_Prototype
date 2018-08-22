@@ -7,7 +7,21 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-123890110-1');
+
+	// Jay's test
+  function clickPieChart(tp)
+  {
+    alert("Jay's Test GA type: " + tp);
+    if(tp === "MySql")
+      gtag('event', 'MySql');
+    else if (tp === "DB2")
+      gtag('event', 'DB2');
+    else
+      gtag('event', 'MongoDB');
+  }
+  clickPieChart("MongoDB");
 </script>
+
 
   <link rel="stylesheet" type="text/css" href="https://www.gs1ca.org/pages/n/infographics/css/animations.css">
 
@@ -144,6 +158,60 @@ _gaTracker('send', 'pageview');
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
   <!-- Head:Jay End -->
+	<!--Clickable Pir Chart: Avinash's Work-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js" integrity="sha384Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" integrity="sha384Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+var data = {
+  datasets: [{
+    data: [300, 50, 100],
+    backgroundColor: [
+      "#F7464A",
+      "#46BFBD",
+      "#FDB45C"
+    ]
+  }],
+  labels: [
+    			"MySQL",
+    			"MS SQL",
+    			"Oracle"
+  			]
+};
+
+$(document).ready(
+  function() {
+    var canvas = document.getElementById("myChart");
+    var ctx = canvas.getContext("2d");
+    var myNewChart = new Chart(ctx, {
+      type: 'pie',
+      data: data
+    });
+
+    canvas.onclick = function(evt) {
+      var activePoints = myNewChart.getElementsAtEvent(evt);
+      if (activePoints[0]) {
+        var chartData = activePoints[0]['_chart'].config.data;
+        var idx = activePoints[0]['_index'];
+
+        var label = chartData.labels[idx];
+        var value = chartData.datasets[0].data[idx];
+
+        var url = "http://example.com/?label=" + label + "&value=" + value;
+        console.log(url);
+		alert(url);
+		if (label == 'Oracle')
+				window.open("https://www.oracle.com/index.html");
+			else if (label == 'MySQL')
+				window.open("http://www.mysql.com");
+			else
+				window.open("https://www.microsoft.com/en-ca/");
+      }
+    };
+  }
+);
+</script>
+<!--Clickable Pir Chart: Avinash's Work-->
 
 </head>
 <body id="body2" style="margin-left:0; margin-top:0; margin-right:0px;">
@@ -152,5 +220,8 @@ _gaTracker('send', 'pageview');
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- body:Jay End -->
+
+
+
 </body>
 </html>
