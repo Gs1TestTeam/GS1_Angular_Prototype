@@ -16,14 +16,14 @@ var data = {
 
 $(document).ready(
   function() {
-    var canvas = document.getElementById("myChart");
-    var ctx = canvas.getContext("2d");
+    //var canvas = document.getElementById("myChart");
+    var ctx = document.getElementById("myChart");
     var myNewChart = new Chart(ctx, {
       type: 'pie',
       data: data
     });
 
-    canvas.onclick = function(evt) {
+    ctx.onclick = function(evt) {
       var activePoints = myNewChart.getElementsAtEvent(evt);
       if (activePoints[0]) {
         var chartData = activePoints[0]['_chart'].config.data;

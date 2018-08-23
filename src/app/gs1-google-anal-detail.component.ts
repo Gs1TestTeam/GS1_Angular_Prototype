@@ -14,7 +14,7 @@ export class Gs1GoogleAnalDetailComponent implements OnInit {
 
    googleData: any;
    chartData: Array<any>;
-   chartLabels: Array<string>; 
+   chartLabels: Array<string>;
    chartTitle: string;
 
   constructor(private actRouter: ActivatedRoute, private google: GS1GetGoogleAnaliticsService) { }
@@ -27,7 +27,7 @@ export class Gs1GoogleAnalDetailComponent implements OnInit {
     this.google.setGoogleData(this.id);
     this.googleData = this.google.getGoogleData();
     this.chartData  = this.googleData[1];
-    this.chartLabels= this.googleData[2];
+    this.chartLabels = this.googleData[2];
     this.chartTitle = this.googleData[4];
   }
 

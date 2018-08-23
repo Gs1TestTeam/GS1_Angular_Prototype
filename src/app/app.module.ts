@@ -22,7 +22,7 @@ import { ChartsModule } from 'ng2-charts'; ​
 import { GS1GetGoogleAnaliticsService } from './gs1-get-google-analitics.service';
 import { Gs1UiShowBackButtonComponent } from './gs1-ui-show-back-button.component';
 import { Gs1UiShowTitleComponent } from './gs1-ui-show-title.component';
-import { GtagModule } from 'angular-gtag';
+//import { GtagModule } from 'angular-gtag';
 
 
 @NgModule({
@@ -50,7 +50,7 @@ import { GtagModule } from 'angular-gtag';
     BrowserModule,
     AppRoutingModule,
     ChartsModule,
-    GtagModule.forRoot({ trackingId: 'UA-123890110-1', trackPageviews: true })
+    //GtagModule.forRoot({ trackingId: 'UA-123890110-1', trackPageviews: true })
   ],
   providers: [GS1GetGoogleAnaliticsService],
   bootstrap: [AppComponent]

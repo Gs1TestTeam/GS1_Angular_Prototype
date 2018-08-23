@@ -11,10 +11,10 @@ import { GS1UiShowPageNotFoundComponent } from './gs1-ui-show-page-not-found.com
 const routes: Routes = [
   { path: 'list1'       , component: Gs1GoogleAnalListComponent },
   { path: 'list2'       , component: Gs1GoogleAnalList2Component },
-  { path: 'list3'       , component: Gs1GoogleAnalList3Component },    
+  { path: 'list3'       , component: Gs1GoogleAnalList3Component },
   { path: 'chart/:id'   , component: Gs1GoogleAnalChartComponent },
   { path: 'detail/:id'  , component: Gs1GoogleAnalDetailComponent },
-  { path: ''            , redirectTo: '/list1' , pathMatch: 'full' },  
+  { path: ''            , redirectTo: '/list1' , pathMatch: 'full' },
   { path: '**'          , component: GS1UiShowPageNotFoundComponent }
 ];
 

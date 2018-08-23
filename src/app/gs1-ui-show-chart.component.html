@@ -1,6 +1,7 @@
-<div class="dbms" style="width: 40%;">
+<!-- <div class="dbms" style="width: 40%;">
         <b>{{chartTitle}}</b>
         <canvas
+            #myChart
             baseChart
             [chartType]="chartStyle"
             [datasets]="chartData"
@@ -9,7 +10,29 @@
             [legend]="true"
             (chartClick)="onChartClick($event)">
         </canvas>
-    </div>
+    </div> -->
+    <!-- <div class="dbms" style="width: 40%;">
+        <b>{{chartTitle}}</b>
+        <canvas
+            #myChart
+        >
+        </canvas>
+    </div> -->
 
-
-
+    <!-- <div class="dbms" style="width: 40%;">
+        <b>{{chartTitle}}</b>
+        <canvas #chart
+            id="myChart"
+            class="myChart"
+            baseChart
+            [chartType]="chartStyle"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [legend]="true"
+            (chartClick)="onChartClick($event)">
+        </canvas>
+    </div>     -->
+<div class="dbms" style="width: 40%;">
+    <canvas #myChart baseChart (click)="onChartClick($event)"></canvas>
+</div>
