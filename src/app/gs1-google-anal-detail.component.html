@@ -5,15 +5,15 @@
         </app-gs1-ui-show-title>
     </b><br/><br/>
 
-    Title: {{chartTitle}}       <br/>
-    Lables: {{chartLabels}}     <br/>
-    Data: {{chartData[0].data}} <br/>
+    Title: {{this.chartData[0].label}}       <br/>
+    Lables: {{label}}     <br/>
+    Data: {{value}} <br/>
 </div>
-<app-gs1-ui-show-table
+<!-- <app-gs1-ui-show-table
 [Col1Title]="'Name'"
 [Col2]="'Rank'"
 [Col3]="'Point'"
 [fieldData]=chartData[0].data
 [labelData] =chartLabels
 ></app-gs1-ui-show-table>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> -->

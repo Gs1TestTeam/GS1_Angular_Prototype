@@ -11,11 +11,15 @@ export class Gs1GoogleAnalDetailComponent implements OnInit {
   pageTitle: string = "GS1 Google Analytics Detail";//added by Olga
   private id: string;
   private paramSubScription: any;
+  private querySubScription: any;
 
   private googleData: any;
   private chartData: Array<any>;
   private chartLabels: Array<string>; 
   private chartTitle: string;
+
+  private label: string;
+  private value: Number;
 
   constructor(private actRouter: ActivatedRoute, private google: GS1GetGoogleAnaliticsService) { }
 
@@ -23,6 +27,12 @@ export class Gs1GoogleAnalDetailComponent implements OnInit {
     this.paramSubScription = this.actRouter.params.subscribe(params => {
       this.id = params['id'];
     });
+    this.querySubScription = this.actRouter.queryParams.subscribe(params => {
+        // Defaults to 0 if no query param provided.
+        this.label = params['label'] || null;
+        this.value = +params['value'] || 0;
+    });
+    // });
 
     this.google.setGoogleData(this.id);
     this.googleData = this.google.getGoogleData();
@@ -33,5 +43,6 @@ export class Gs1GoogleAnalDetailComponent implements OnInit {
 
   ngOnDestroy() {
     this.paramSubScription.unsubscribe();
+    this.querySubScription.unsubscribe();
   }    
 }

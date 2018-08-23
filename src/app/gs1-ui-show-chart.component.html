@@ -1,38 +1,5 @@
-<!-- <div class="dbms" style="width: 40%;">
-        <b>{{chartTitle}}</b>
-        <canvas
-            #myChart
-            baseChart
-            [chartType]="chartStyle"
-            [datasets]="chartData"
-            [labels]="chartLabels"
-            [options]="chartOptions"
-            [legend]="true"
-            (chartClick)="onChartClick($event)">
-        </canvas>
-    </div> -->
-    <!-- <div class="dbms" style="width: 40%;">
-        <b>{{chartTitle}}</b>
-        <canvas
-            #myChart
-        >
-        </canvas>
-    </div> -->
-
-    <!-- <div class="dbms" style="width: 40%;">
-        <b>{{chartTitle}}</b>
-        <canvas #chart
-            id="myChart"
-            class="myChart"
-            baseChart
-            [chartType]="chartStyle"
-            [datasets]="chartData"
-            [labels]="chartLabels"
-            [options]="chartOptions"
-            [legend]="true"
-            (chartClick)="onChartClick($event)">
-        </canvas>
-    </div>     -->
 <div class="dbms" style="width: 40%;">
-    <canvas #myChart baseChart (click)="onChartClick($event)"></canvas>
+        <b>{{this.chartData[0].label}}</b>
+        <canvas #myChart (click)="onChartClick($event)"></canvas>
 </div>
+    
