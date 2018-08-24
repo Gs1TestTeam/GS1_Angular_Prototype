@@ -3,7 +3,7 @@ August 2018 ~
 
 Developed by Jay, Avinash, Olga, Written by Jay
 
-Url: http://gs1test123team.000webhostapp.com/
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `Url:` https://shrouded-brook-49369.herokuapp.com/
 
 **1. Overview:** This taks is to define the prototypes of reusable UI components with up-to-date version Angular and Google Analytics.
 
@@ -118,5 +118,5 @@ ng g s GS1GetData --module app --spec false
 
 [Issues for GS1's UI Components](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/issues)
 
-Demo url: http://gs1test123team.000webhostapp.com/
+Demo url: https://shrouded-brook-49369.herokuapp.com/
 
