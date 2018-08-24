@@ -3,7 +3,9 @@ August 2018 ~
 
 Developed by Jay, Avinash, Olga, Written by Jay
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `Url:` https://shrouded-brook-49369.herokuapp.com/
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Change (2018.08.23): 
+
+Url: https://shrouded-brook-49369.herokuapp.com/
 
 **1. Overview:** This taks is to define the prototypes of reusable UI components with up-to-date version Angular and Google Analytics.
 
@@ -22,7 +24,9 @@ Business Requirements
 - Create 3 pages Angular pages (List, Chart, Detail)
 - Embed Google Analytics chart
 - Be like ProtoType 
+
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Add (2018.08.17):
+
 - When clicking the divide part of a chart, the click event goes to Google Analytics and the part value displays in the detail page.
 
 **3. Key responsibilities:**
@@ -31,7 +35,9 @@ Business Requirements
 - Create service modules using Google Analytics API to diplay data in a chart format
 - Test unit modules using Jasmine/Angular testing utilities
 - Built/Deployed application on a free web hosting provider
+
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Add (2018.08.20 ~ 24):
+
 - Click the divide part of a chart 
 - Send the click events to Google Analytics using angular-gtag.js
 - Pass and display the clicked element value of chart
@@ -39,7 +45,8 @@ Business Requirements
 ![eps0824](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/chart_biz_req.jpg)
 
 **4. System Diagram:**
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Change (2018.08.24):
 
 ![eps01](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/system-diagram.jpg)
 
