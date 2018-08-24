@@ -13,13 +13,13 @@ export class Gs1GoogleAnalDetailComponent implements OnInit {
   private paramSubScription: any;
   private querySubScription: any;
 
-  private googleData: any;
-  private chartData: Array<any>;
+  googleData: any;
+  chartData: Array<any>;
   private chartLabels: Array<string>; 
   private chartTitle: string;
 
-  private label: string;
-  private value: Number;
+  label: string;
+  value: Number;
 
   constructor(private actRouter: ActivatedRoute, private google: GS1GetGoogleAnaliticsService) { }
 

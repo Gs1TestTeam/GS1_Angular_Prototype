@@ -18,7 +18,7 @@ export class GS1UiShowChartComponent implements OnInit, OnDestroy, GS1UIShowChar
 
   private googleData: any;
   private chartOptions: any;
-  private chartData: Array<any>;
+  chartData: Array<any>;
   private chartLabels: Array<string>; 
   private googleUrl: string;
   chart: any;
@@ -72,15 +72,11 @@ export class GS1UiShowChartComponent implements OnInit, OnDestroy, GS1UIShowChar
       //var url = "http://example.com/?label=" + label + "&value=" + value;
       //console.log(url);
     }
-    this.router.navigate(['/detail/' + this.id], { queryParams: { label: label,  value:value} });
+    this.router.navigate(['/detail/' + this.id], { queryParams: { label: label,  value:value} }); 
   } 
 
  
   onInitial(): void {
-
-
-
-
        const ctx = this.context;
 
       console.log(ctx);      
@@ -89,7 +85,7 @@ export class GS1UiShowChartComponent implements OnInit, OnDestroy, GS1UIShowChar
         data: {
             labels: this.chartLabels,
             datasets: [{
-                label: this.chartData[0].label,
+                label: this.chartData[0].label, 
                 data: this.chartData[0].data,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
