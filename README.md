@@ -3,7 +3,9 @@ August 2018 ~
 
 Developed by Jay, Avinash, Olga, Written by Jay
 
-Url: http://gs1test123team.000webhostapp.com/
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Change (2018.08.23): 
+
+Url: https://shrouded-brook-49369.herokuapp.com/
 
 **1. Overview:** This taks is to define the prototypes of reusable UI components with up-to-date version Angular and Google Analytics.
 
@@ -23,6 +25,10 @@ Business Requirements
 - Embed Google Analytics chart
 - Be like ProtoType 
 
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Add (2018.08.17):
+
+- When clicking the divide part of a chart, the click event goes to Google Analytics and the part value displays in the detail page.
+
 **3. Key responsibilities:**
 - Draw Visualization Diagrams for creating web pages
 - Design reusable UI components with Angular such as ShowLogo, ShowNavigation, ShowHeader, ShowFooter, ShowChart, ShowTable and so on
@@ -30,7 +36,17 @@ Business Requirements
 - Test unit modules using Jasmine/Angular testing utilities
 - Built/Deployed application on a free web hosting provider
 
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Add (2018.08.20 ~ 24):
+
+- Click the divide part of a chart 
+- Send the click events to Google Analytics using angular-gtag.js
+- Pass and display the clicked element value of chart
+
+![eps0824](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/chart_biz_req.jpg)
+
 **4. System Diagram:**
+
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Change (2018.08.24):
 
 ![eps01](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/blob/master/src/assets/image/system-diagram.jpg)
 
@@ -118,5 +134,5 @@ ng g s GS1GetData --module app --spec false
 
 [Issues for GS1's UI Components](https://github.com/Gs1TestTeam/GS1_Angular_Prototype/issues)
 
-Demo url: http://gs1test123team.000webhostapp.com/
+Demo url: https://shrouded-brook-49369.herokuapp.com/
 
