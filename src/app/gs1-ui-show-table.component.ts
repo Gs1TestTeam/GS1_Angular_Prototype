@@ -16,7 +16,7 @@ export class GS1UiShowTableComponent implements OnInit, GS1UIShowTableIF {
   searchPoint: string;
 
   constructor( recordListService: Gs1GetRecordListServiceService ) {
-    this.recordList = recordListService.getRecordList(); 
+    this.recordList = recordListService.getRecordList();
   }
 
   ngOnInit() {

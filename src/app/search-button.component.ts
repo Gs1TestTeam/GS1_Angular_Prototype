@@ -23,32 +23,36 @@ export class SearchButtonComponent implements OnInit {
   }
 
   searchNow(event: any): void {
-   
+
     if( isNullOrUndefined(this.searchName) ){
         this.searchName='';
     }
     if( isNullOrUndefined(this.searchRank) ){
       this.searchRank='';
-    }  
+    }
     if( isNullOrUndefined(this.searchPoint) ){
       this.searchPoint='';
-    } 
-    
+    }
+
     this.recordsFound = this.recordList.filter(
         e => e.name.indexOf(this.searchName) !== -1
           && e.rank.indexOf(this.searchRank) !== -1
-          && e.point.indexOf(this.searchPoint) !== -1 
+          && e.point.indexOf(this.searchPoint) !== -1
         );
-  
-    alert(" creating GTAG with  "+this.searchName+", "+this.searchRank+", "+this.searchPoint);      
- /*   
-    this.gtag.event('search', search_term: {
-                'report_id' : 1,
-                'name':this.searchName,
-                'rank': this.searchRank,
-                'points':this.searchPoint
+
+    alert(' creating GTAG with  ' + this.searchName + ', ' + this.searchRank + ', ' + this.searchPoint);
+
+    this.gtag.event('login', {
+                method: '1',
+                event_category: this.searchName,
+                event_label: 'New user logged in via OAuth'
                 });
-   */ 
+
 
   }
 }
+
+/* 'report_id' : 1,
+                event_category: this.searchName,
+                'rank': this.searchRank,
+				'points':this.searchPoint */
