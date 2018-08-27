@@ -18,12 +18,13 @@ import { Gs1GoogleAnalDetailComponent } from './gs1-google-anal-detail.component
 import { Gs1GoogleAnalList2Component } from './gs1-google-anal-list2.component';
 import { Gs1GoogleAnalList3Component } from './gs1-google-anal-list3.component';
 import { ChartsModule } from 'ng2-charts'; ​
-
+import { FormsModule } from '@angular/forms';
 import { GS1GetGoogleAnaliticsService } from './gs1-get-google-analitics.service';
 import { Gs1UiShowBackButtonComponent } from './gs1-ui-show-back-button.component';
 import { Gs1UiShowTitleComponent } from './gs1-ui-show-title.component';
 import { GtagModule } from 'angular-gtag';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SearchButtonComponent } from './search-button.component';
 
 @NgModule({
   declarations: [
@@ -43,14 +44,17 @@ import { GtagModule } from 'angular-gtag';
     Gs1GoogleAnalList2Component,
     Gs1GoogleAnalList3Component,
     Gs1UiShowBackButtonComponent,
-    Gs1UiShowTitleComponent
+    Gs1UiShowTitleComponent,
+    SearchButtonComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ChartsModule,
-    GtagModule.forRoot({ trackingId: 'UA-123890110-1', trackPageviews: true })
+    FormsModule,
+    GtagModule.forRoot({ trackingId: 'UA-123890110-1', trackPageviews: true }),
+    Ng2SearchPipeModule
   ],
   providers: [GS1GetGoogleAnaliticsService],
   bootstrap: [AppComponent]

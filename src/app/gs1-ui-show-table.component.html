@@ -1,47 +1,34 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">{{Col1Title}}</th>
-      <th scope="col">{{Col2}}</th>
-      <th scope="col">{{Col3}}</th>
+      <th scope="col">{{Col1Title}}
+        <input  [(ngModel)]="searchName" >
+       </th>
+      <th scope="col">{{Col2}}
+        <input [(ngModel)]="searchRank" >
+      </th>
+      <th scope="col">{{Col3}}
+      <input [(ngModel)]="searchPoint" > 
+    </th>  
+    <th>
+      <app-search-button #searchbutton
+                  [searchName]="searchName" 
+                  [searchRank]="searchRank" 
+                  [searchPoint]="searchPoint" 
+                  [recordList]="recordList"
+                  ></app-search-button>
+    </th>
     </tr>
   </thead>
-  <tbody>
-    <tr class="table-active">
-      <th scope="row">{{labelData[0]}}</th>
-      <td>1</td>
-      <td>{{fieldData[0]}}</td>
-    </tr>
+  <tbody *ngFor="let i of  searchbutton.recordsFound">
     <tr>
-      <th scope="row">{{labelData[1]}}</th>
-      <td>2</td>
-      <td>{{fieldData[1]}}</td>
-    </tr>
-    <tr class="table-primary">
-      <th scope="row">{{labelData[2]}}</th>
-      <td>3</td>
-      <td>{{fieldData[2]}}</td>
-    </tr>
-    <tr class="table-success">
-      <th scope="row">{{labelData[3]}}</th>
-      <td>5</td>
-      <td>{{fieldData[3]}}</td>
-    </tr>
-    <tr class="table-danger">
-      <th scope="row">{{labelData[4]}}</th>
-      <td>6</td>
-      <td>{{fieldData[4]}}</td>
-    </tr>
-    <tr class="table-warning">
-      <th scope="row">{{labelData[5]}}</th>
-      <td>7</td>
-      <td>{{fieldData[5]}}</td>
-    </tr>
-    <tr class="table-info">
-      <th scope="row">{{labelData[6]}}</th>
-      <td>8</td>
-      <td>{{fieldData[6]}}</td>
+      <td>{{i.name}}</td>
+      <td>{{i.rank}}</td>
+      <td>{{i.point}}</td>
+      <td></td>
     </tr>
   </tbody>
+  <p>{{searchName}} | {{searchRank}} | {{searchPoint}}</p>
 </table>
+
 
