@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgxPaginationModule} from 'ngx-pagination';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GS1UiShowLogoComponent } from './gs1-ui-show-logo.component';
@@ -54,7 +54,8 @@ import { SearchButtonComponent } from './search-button.component';
     ChartsModule,
     FormsModule,
     GtagModule.forRoot({ trackingId: 'UA-123890110-1', trackPageviews: true }),
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    NgxPaginationModule
   ],
   providers: [GS1GetGoogleAnaliticsService],
   bootstrap: [AppComponent]
