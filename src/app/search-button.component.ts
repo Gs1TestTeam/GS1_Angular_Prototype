@@ -42,10 +42,10 @@ export class SearchButtonComponent implements OnInit {
 
     alert(' creating GTAG with  ' + this.searchName + ', ' + this.searchRank + ', ' + this.searchPoint);
 
-    this.gtag.event('login', {
+    this.gtag.event('search', {
                 method: '1',
-                event_category: this.searchName,
-                event_label: 'New user logged in via OAuth'
+                event_category: this.searchName + ', ' + this.searchRank + ', ' + this.searchPoint,
+                event_label: 'Link AdSense or Ad Exchange to your Analytics property.Get started Linking your AdSense or Ad Exchange and Google Analytics properties gives you access to metrics such as impressions, clicks, and revenue which you can add to your favorite analytics reports to get a better understanding of how well your pages or content is monetizing. Once you’ve linked your properties, you can use insights from Analytics to refine and optimize your AdSense or Ad Exchange ad units, improving the overall performance of your business.Linking properties requires a user who has Edit permission on the Analytics property and Administrator access on the Adsense or Ad Exchange account. Learn more abount linking AdSense or Ad Exchange'
                 });
 
 
