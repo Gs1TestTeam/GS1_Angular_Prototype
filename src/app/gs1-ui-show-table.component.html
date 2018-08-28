@@ -8,19 +8,19 @@
         <input [(ngModel)]="searchRank" >
       </th>
       <th scope="col">{{Col3}}
-      <input [(ngModel)]="searchPoint" > 
-    </th>  
+      <input [(ngModel)]="searchPoint" >
+    </th>
     <th>
       <app-search-button #searchbutton
-                  [searchName]="searchName" 
-                  [searchRank]="searchRank" 
-                  [searchPoint]="searchPoint" 
+                  [searchName]="searchName"
+                  [searchRank]="searchRank"
+                  [searchPoint]="searchPoint"
                   [recordList]="recordList"
                   ></app-search-button>
     </th>
     </tr>
   </thead>
-  <tbody *ngFor="let i of  searchbutton.recordsFound">
+  <tbody *ngFor="let i of searchbutton.recordsFound | paginate: { itemsPerPage: 10, currentPage: p }">
     <tr>
       <td>{{i.name}}</td>
       <td>{{i.rank}}</td>
@@ -30,5 +30,5 @@
   </tbody>
   <p>{{searchName}} | {{searchRank}} | {{searchPoint}}</p>
 </table>
-
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
 
