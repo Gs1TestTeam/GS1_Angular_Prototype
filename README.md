@@ -136,3 +136,5 @@ ng g s GS1GetData --module app --spec false
 
 Demo url: https://shrouded-brook-49369.herokuapp.com/
 
+Demo url2: http://gs1test123team.000webhostapp.com/
+
